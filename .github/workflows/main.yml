@@ -9,9 +9,8 @@ jobs:
          # you must check out the repository
          - name: Checkout
            uses: actions/checkout@v2
-         - name: Phân tích Folder
-           #run: echo "The time was ${{ steps.hello.outputs.time }}"
+         - name: EXECUTE "workflowExecuter\flowPowershell.ps1"
            run: workflowExecuter\flowPowershell.ps1
            shell: powershell
-         - name: RUN "node workflowExecuter\flowNodeJs.js"
+         - name: EXECUTE "node workflowExecuter\flowNodeJs.js"
            run: node workflowExecuter\flowNodeJs.js
