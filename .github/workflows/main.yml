@@ -10,7 +10,7 @@ jobs:
          - name: Checkout
            uses: actions/checkout@v2
            env:
-              message: ${{ github.event.head_commit.message }}
+              message: Thử hàng:${{ github.event.head_commit.message }}
          - name: EXECUTE "workflowExecuter\flowPowershell.ps1"
            run: workflowExecuter\flowPowershell.ps1
            shell: powershell
